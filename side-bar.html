@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="side-bar.css">
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Forum</li>
+            <li>Contact</li>
+        </ul>
+
+        <div class="btn-box">
+            <button>Sign In</button>
+            <button>Sign Up</button>
+        </div>
+
+        <div class="menu-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="side-bar">
+            <div class="close-btn">x</div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Forum</li>
+                <li>Contact</li>
+            </ul>
+            <div class="btn-box">
+                <button>Sign In</button>
+                <button>Sign Up</button>
+            </div>
+        </div>
+
+    </header>
+
+    <script>
+        document.querySelector(".menu-bar").addEventListener("click", function () {
+            document.querySelector(".side-bar").style.display = "flex"
+        });
+
+        document.querySelector(".close-btn").addEventListener("click", function () {
+            document.querySelector(".side-bar").style.display = "none"
+        });
+        
+    </script>
+    
+</body>
+</html>
